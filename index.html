@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Filmes Clássicos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Avaliação de Filmes Clássicos</h1>
+    </header>
+
+    <section class="movies">
+        <!-- Exemplo de filme com avaliação -->
+        <div class="movie">
+            <h2>O Poderoso Chefão</h2>
+            <div class="rating">
+                <span>Classifique o filme:</span>
+                <div class="stars" data-movie="poderoso-chefao">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+            </div>
+            <div class="info">
+                <p><strong>Diretor:</strong> Francis Ford Coppola</p>
+                <p><strong>Ano:</strong> 1972</p>
+                <p><strong>Sinopse:</strong> A história da família Corleone, um dos clãs mais poderosos da máfia americana.</p>
+            </div>
+            <button class="resetBtn" data-movie="poderoso-chefao">Resetar Avaliação</button>
+        </div>
+
+        <div class="movie">
+            <h2>O Mágico de Oz</h2>
+            <div class="rating">
+                <span>Classifique o filme:</span>
+                <div class="stars" data-movie="magico-de-oz">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+            </div>
+            <div class="info">
+                <p><strong>Diretor:</strong> Victor Fleming</p>
+                <p><strong>Ano:</strong> 1939</p>
+                <p><strong>Sinopse:</strong> Dorothy é transportada para a terra mágica de Oz, onde faz novos amigos e luta contra a bruxa mágica.</p>
+            </div>
+            <button class="resetBtn" data-movie="magico-de-oz">Resetar Avaliação</button>
+        </div>
+
+        <!-- Adicione os outros filmes aqui da mesma forma -->
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Avaliação de Filmes Clássicos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botão com JavaScript</title>
+  <style>
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>presente</h1>
+  <button id="meuBotao">Clique aqui</button>
+
+  <script>
+    // Seleciona o botão pelo ID
+    const botao = document.getElementById("meuBotao");
+
+    // Adiciona um evento de clique ao botão
+    botao.addEventListener("click", function () {
+      alert("vocÊ foi enganado!");
+    });
+  </script>
+</body>
+</html>
